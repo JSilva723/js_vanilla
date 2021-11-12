@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./normalize.css">
+        <link rel="stylesheet" href="./style.css">
+        <title>DOM</title>
+    </head>
+    <body >
+        <header class="header">
+            <h1>Practica DOM</h1>
+        </header>
+        <div class="hamburger">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+        </div>
+        <aside class="panel">
+            <nav class="menu">
+                <a href="#section1">Reloj</a>
+                <a href="#section2">Eventos de teclado</a>
+                <a href="#section3">Filtro de Busquedas</a>
+            </nav>
+        </aside>
+        <main>
+            <section class="section" id="section1">
+                <h2>Reloj</h2>
+                <div id="clock"></div>
+                <button id="start">Start</button>
+                <button id="stop" disabled>Stop</button>
+            </section>
+            <section class="section" id="section2">
+                <h2>Eventos de teclado</h2>
+                <div class="ground">
+                    <div class="ball"></div>
+                </div>
+            </section>
+            <section class="section" id="section3">
+                <h2>Filtro de busquedas</h2>
+                <input type="search" placeholder="Buscar..." class="card-filter">
+                <article class="cards">
+                    <figure class="card">
+                        <img src="https://placeimg.com/200/200/nature" alt="Nature">
+                        <figcaption>Nature</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="https://placeimg.com/200/200/any" alt="Any">
+                        <figcaption>Any</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="https://placeimg.com/200/200/tech" alt="Tech">
+                        <figcaption>Tech</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="https://placeimg.com/200/200/animals" alt="Animals">
+                        <figcaption>Animals</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="https://placeimg.com/200/200/people" alt="People">
+                        <figcaption>People</figcaption>
+                    </figure>
+                    <figure class="card">
+                        <img src="https://placeimg.com/200/200/architecture" alt="Architecture">
+                        <figcaption>Architecture</figcaption>
+                    </figure>
+                </article>
+            </section>
+        </main>
+        <div class="theme-container">
+            <div class="theme red"></div>
+            <div class="theme green"></div>
+            <div class="theme white"></div>
+        </div>
+        <script src="./index.js" type="module"></script>
+    </body>
+</html>
